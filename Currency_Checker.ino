@@ -18,17 +18,8 @@
 #include <WiFiMulti.h>
 #include <HTTPClient.h>
 
-// TODO: In the future: BTC / ETH / XRP / ADA / DOGE
-// Show these currencies TRY / EUR / GBP / AUD
-// Under each currency, show the last time updated,
-
-// ALSO, store the previous value and show the change with its color, red or green
-
-#define WIFI_SSID "EMRE-WIFI"
-#define WIFI_PASSWORD "Emre201601"
-
-/*#define WIFI_SSID "fur_meinen_fuhrer"
-#define WIFI_PASSWORD "12134567"*/
+#define WIFI_SSID "SSID"
+#define WIFI_PASSWORD "PASSWORD"
 
 #define DEFAULT_DISPLAY_COLOR TFT_BLACK
 #define DEFAULT_FONT 1
@@ -56,7 +47,7 @@ String currency_names[NUMBER_OF_CURRENCIES] = {"Turkish Lira", "Euro", "British 
 String currency_ISO[NUMBER_OF_CURRENCIES] = {"TRY", "EUR", "GBP", "AUD", 
                                               "BTC", "ETH", "ADA", "XRP", "SHIB", "LTC", "SOL", "AVAX", "DOGE"
 };
-// TODO: Add all of the indicators
+
 String currency_indicators[NUMBER_OF_CURRENCIES] = {"https://www.x-rates.com/graph/?from=USD&amp;to=TRY", 
                                                     "https://www.x-rates.com/graph/?from=USD&amp;to=EUR", 
                                                     "https://www.x-rates.com/graph/?from=USD&amp;to=GBP",
@@ -339,7 +330,7 @@ void loop() {
         tft.fillScreen(DEFAULT_DISPLAY_COLOR);
         tft.setTextColor(TFT_BLUE);
         tft.drawCentreString(".Updating.", 64, 64, DEFAULT_FONT);
-        // TODO: Use the second core to animate, and stop animating when the 
+        
         Serial.println("Beginning HTTP request");
 
         HTTPClient http;
