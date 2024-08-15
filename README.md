@@ -6,10 +6,9 @@ For Cryptocurrencies the coinmarketcap api with basic plan is used, the update r
 If one APIKEY is used, you can update every 5 mins, if you want to update more frequently, create more accounts for more APIKEYs
 With the basic plan, 333 updates is allowed every day, means nearly 13 updates is allowed every hour with a single APIKEY, 60 / 13 = 4.6 minutes b/w each update. 
 
-![Device showcase](https://github.com/Hasan-Amkieh/Currency-Checker/assets/46199105/6f00b0dc-0adf-47a6-9311-2274a121d2a6)
-
 [Deviec Demo](https://github.com/user-attachments/assets/e4cc6e9b-52d1-450a-9285-e50fa07c2ad6)
 
+![Device showcase](https://github.com/Hasan-Amkieh/Currency-Checker/assets/46199105/6f00b0dc-0adf-47a6-9311-2274a121d2a6)
 
 
 
